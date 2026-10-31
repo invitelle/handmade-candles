@@ -502,21 +502,21 @@ Collection handle: halloween-candles
   </section>
 
   <!-- NEWSLETTER -->
-  <section class="kiss-newsletter">
-    <div>
+  <section class="kiss-newsletter" id="kiss-newsletter">
+    <div class="kiss-newsletter-copy">
       <h2>THE <em>GLOW.</em></h2>
       <p>Join our list for new collections, special offers and little surprises.</p>
     </div>
 
-    {% form 'customer', class: 'kiss-newsletter-form' %}
+    {% form 'customer', id: 'KissNewsletterForm', class: 'kiss-newsletter-form' %}
       <input type="hidden" name="contact[tags]" value="newsletter">
       <label for="KissNewsletterEmail" class="kiss-visually-hidden">Email address</label>
       <input
         id="KissNewsletterEmail"
         type="email"
         name="contact[email]"
+        value="{{ form.email }}"
         placeholder="Enter your email address"
-        aria-label="Email address"
         autocomplete="email"
         autocorrect="off"
         autocapitalize="off"
@@ -525,11 +525,11 @@ Collection handle: halloween-candles
       <button type="submit">SUBSCRIBE ↗</button>
 
       {% if form.posted_successfully? %}
-        <p class="kiss-form-success">Thank you for subscribing!</p>
+        <p class="kiss-form-success" role="status">Thank you for subscribing!</p>
       {% endif %}
 
       {% if form.errors %}
-        <p class="kiss-form-error">{{ form.errors | default_errors }}</p>
+        <div class="kiss-form-error" role="alert">{{ form.errors | default_errors }}</div>
       {% endif %}
     {% endform %}
   </section>
