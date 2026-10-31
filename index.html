@@ -1,1 +1,1596 @@
+{% comment %}
+KISS DESIGN — Luxury Halloween Candle Store
+Shopify Custom Liquid section
+Collection handle: halloween-candles
+{% endcomment %}
 
+{% assign kiss_collection = collections['halloween-candles'] %}
+
+<div id="kiss-design">
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="kiss-announcement">
+    <span>✦</span> HALLOWEEN SPECIAL — 30% OFF SELECTED CANDLES
+    <span>✦</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="kiss-header">
+    <a href="/" class="kiss-logo">KISS <span>DESIGN</span></a>
+
+    <nav class="kiss-nav">
+      <a href="#kiss-home">Home</a>
+      <a href="#kiss-collection">Collection</a>
+      <a href="#kiss-story">Our Story</a>
+      <a href="#kiss-faq">FAQ</a>
+    </nav>
+
+    <a href="/cart" class="kiss-cart">
+      CART <span>{{ cart.item_count }}</span>
+    </a>
+
+    <button class="kiss-menu-toggle" type="button" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="kiss-mobile-menu">
+    <a href="#kiss-home">Home</a>
+    <a href="#kiss-collection">Collection</a>
+    <a href="#kiss-story">Our Story</a>
+    <a href="#kiss-faq">FAQ</a>
+    <a href="/cart">Shopping Cart</a>
+  </div>
+
+  <!-- 01 HERO -->
+  <section class="kiss-hero" id="kiss-home">
+    <div class="kiss-hero-overlay"></div>
+
+    <div class="kiss-hero-content">
+      <p class="kiss-eyebrow">THE ART OF DARKNESS · HALLOWEEN 2026</p>
+
+      <h1>
+        HALLOWEEN<br>
+        IS BETTER<br>
+        <span>WITH CANDLES.</span>
+      </h1>
+
+      <p class="kiss-hero-description">
+        Light up your darkest nights with extraordinary Halloween candles.
+        Mysterious designs, warm light and unforgettable atmosphere.
+      </p>
+
+      <div class="kiss-hero-actions">
+        <a href="#kiss-collection" class="kiss-button">
+          SHOP THE COLLECTION <span>↗</span>
+        </a>
+        <span class="kiss-hero-note">LIMITED HALLOWEEN EDITION</span>
+      </div>
+    </div>
+
+    <div class="kiss-hero-bottom">
+      <span>DESIGNED TO BE DIFFERENT</span>
+      <span>01 — 09</span>
+    </div>
+  </section>
+
+  <!-- 02 PROBLEM STATEMENT -->
+  <section class="kiss-problems" id="kiss-story">
+    <div class="kiss-section-heading">
+      <p class="kiss-eyebrow">NOT JUST ANOTHER CANDLE</p>
+      <h2>YOUR SPACE DESERVES<br><em>A LITTLE MAGIC.</em></h2>
+      <p>
+        Halloween is about the atmosphere. But ordinary decorations
+        don't always create the feeling you're looking for.
+      </p>
+    </div>
+
+    <div class="kiss-problem-grid">
+      <article class="kiss-problem">
+        <span class="kiss-number">01</span>
+        <div class="kiss-symbol">✧</div>
+        <h3>TOO ORDINARY</h3>
+        <p>Standard candles look the same. Your Halloween deserves something more special.</p>
+      </article>
+
+      <article class="kiss-problem">
+        <span class="kiss-number">02</span>
+        <div class="kiss-symbol">☾</div>
+        <h3>NO ATMOSPHERE</h3>
+        <p>Decorations alone cannot create that warm, mysterious Halloween mood.</p>
+      </article>
+
+      <article class="kiss-problem">
+        <span class="kiss-number">03</span>
+        <div class="kiss-symbol">✦</div>
+        <h3>NOT GIFT-WORTHY</h3>
+        <p>Finding a seasonal gift that feels thoughtful and beautiful can be difficult.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 03 BENEFITS -->
+  <section class="kiss-benefits">
+    <div class="kiss-benefits-image">
+      <div class="kiss-image-caption">
+        <span>THE HALLOWEEN COLLECTION</span>
+        <span>MADE FOR THE MOMENT</span>
+      </div>
+    </div>
+
+    <div class="kiss-benefits-content">
+      <p class="kiss-eyebrow">WHY KISS DESIGN?</p>
+      <h2>SMALL DETAILS.<br><em>BIG ATMOSPHERE.</em></h2>
+
+      <div class="kiss-benefit-list">
+        <div class="kiss-benefit">
+          <span>01</span>
+          <div>
+            <h3>UNIQUE DESIGNS</h3>
+            <p>Halloween-inspired details that make every candle stand out.</p>
+          </div>
+        </div>
+
+        <div class="kiss-benefit">
+          <span>02</span>
+          <div>
+            <h3>WARM AMBIENCE</h3>
+            <p>Create a cozy, mysterious atmosphere with a beautiful candle glow.</p>
+          </div>
+        </div>
+
+        <div class="kiss-benefit">
+          <span>03</span>
+          <div>
+            <h3>BEAUTIFUL GLASS JARS</h3>
+            <p>Decorative glass containers that look lovely in your space.</p>
+          </div>
+        </div>
+
+        <div class="kiss-benefit">
+          <span>04</span>
+          <div>
+            <h3>PERFECT FOR GIFTING</h3>
+            <p>A thoughtful seasonal surprise for someone who loves Halloween.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#kiss-collection" class="kiss-text-link">
+        DISCOVER THE COLLECTION ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- 04 PRODUCT FEATURES -->
+  <section class="kiss-features">
+    <div class="kiss-section-heading">
+      <p class="kiss-eyebrow">THE DETAILS MATTER</p>
+      <h2>MADE TO BE<br><em>ADMired.</em></h2>
+      <p>Every detail brings a little more Halloween magic into your home.</p>
+    </div>
+
+    <div class="kiss-feature-grid">
+      <div class="kiss-feature">
+        <span class="kiss-feature-icon">◈</span>
+        <h3>GLASS JAR DESIGN</h3>
+        <p>Beautiful glass containers with a decorative Halloween look.</p>
+      </div>
+
+      <div class="kiss-feature">
+        <span class="kiss-feature-icon">☽</span>
+        <h3>SEASONAL SCENTS</h3>
+        <p>Choose from the fragrance options available on each product page.</p>
+      </div>
+
+      <div class="kiss-feature">
+        <span class="kiss-feature-icon">✧</span>
+        <h3>HALLOWEEN DETAILS</h3>
+        <p>Pumpkins, ghosts, black cats and other mysterious designs.</p>
+      </div>
+
+      <div class="kiss-feature">
+        <span class="kiss-feature-icon">♧</span>
+        <h3>GIFTABLE STYLE</h3>
+        <p>A lovely seasonal gift for candle and Halloween lovers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 COLLECTION / PRODUCTS -->
+  <section class="kiss-collection" id="kiss-collection">
+    <div class="kiss-collection-top">
+      <div>
+        <p class="kiss-eyebrow">THE LIMITED EDITION</p>
+        <h2>THE HALLOWEEN<br><em>COLLECTION.</em></h2>
+      </div>
+
+      <p class="kiss-collection-description">
+        Discover your favorite candle and bring a little mystery home.
+      </p>
+    </div>
+
+    <div class="kiss-discount-note">
+      <span>✦</span>
+      <div>
+        <strong>30% OFF SELECTED CANDLES</strong>
+        <small>Limited Halloween offer · While stocks last</small>
+      </div>
+      <span>✦</span>
+    </div>
+
+    <div class="kiss-product-grid">
+
+      <article class="kiss-product-card">
+        <a href="https://apleasantthought.com/products/no-13-brocade-bone-raven-candle?variant=43938207629508" class="kiss-product-image" target="_blank" rel="noopener">
+          <img src="https://apleasantthought.com/cdn/shop/files/no13blackcandleapleasantthoughta_800x.jpg?v=1721109380" alt="No. 13 Brocade and Bone Raven Candle" loading="lazy" width="800" height="1000" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+          <div class="kiss-no-image" style="display:none;">RAVEN</div>
+          <span class="kiss-product-badge">GOTHIC EDITION</span>
+        </a>
+        <div class="kiss-product-info">
+          <a href="https://apleasantthought.com/products/no-13-brocade-bone-raven-candle?variant=43938207629508" class="kiss-product-title" target="_blank" rel="noopener">Raven Candle</a>
+          <p class="kiss-product-description">Brocade &amp; Bone · Matte black glass vessel</p>
+          <div class="kiss-product-price"><strong>$44.00 USD</strong></div>
+          <a class="kiss-add-button kiss-external-button" href="https://apleasantthought.com/products/no-13-brocade-bone-raven-candle?variant=43938207629508" target="_blank" rel="noopener">VIEW CANDLE <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="kiss-product-card">
+        <a href="https://generalwax.com/collections/all-natural-candles/products/haunted-spellbook-oud-scented-candle" class="kiss-product-image" target="_blank" rel="noopener">
+          <img src="https://generalwax.com/cdn/shop/files/HauntedSpellbookoudscentedcandleinadarkglassjarwithmoonlitspellbookartworkandamatteblackwoodenlid.png?v=1791511424&amp;width=1000" alt="Haunted Spellbook Oud Scented Candle" loading="lazy" width="800" height="1000" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';"><div class="kiss-no-image" style="display:none;">HAUNTED SPELLBOOK</div>
+          <span class="kiss-product-badge">HALLOWEEN</span>
+        </a>
+        <div class="kiss-product-info">
+          <a href="https://generalwax.com/collections/all-natural-candles/products/haunted-spellbook-oud-scented-candle" class="kiss-product-title" target="_blank" rel="noopener">Haunted Spellbook</a>
+          <p class="kiss-product-description">Oud · Ambered cedar · White musk</p>
+          <div class="kiss-product-price"><strong>$14.99 USD</strong></div>
+          <a class="kiss-add-button kiss-external-button" href="https://generalwax.com/collections/all-natural-candles/products/haunted-spellbook-oud-scented-candle" target="_blank" rel="noopener">VIEW CANDLE <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="kiss-product-card">
+        <a href="https://candlecraftcollective.com/products/wick-d-limited-edition-halloween-candle" class="kiss-product-image" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=1000&q=85" alt="Dark candle in a glass jar" loading="lazy" width="800" height="1000" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';"><div class="kiss-no-image" style="display:none;">WICK’D</div>
+          <span class="kiss-product-badge">LIMITED EDITION</span>
+        </a>
+        <div class="kiss-product-info">
+          <a href="https://candlecraftcollective.com/products/wick-d-limited-edition-halloween-candle" class="kiss-product-title" target="_blank" rel="noopener">Wick’d</a>
+          <p class="kiss-product-description">Limited Edition · Clove · Smoked oud · Leather</p>
+          <div class="kiss-product-price"><span class="kiss-old-price">$40.00</span><strong>$25.00 USD</strong></div>
+          <a class="kiss-add-button kiss-external-button" href="https://candlecraftcollective.com/products/wick-d-limited-edition-halloween-candle" target="_blank" rel="noopener">VIEW CANDLE <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="kiss-product-card">
+        <a href="https://vampirefreaks.com/en-uk/products/conjuring-cat-pumpkin-potion-candle" class="kiss-product-image" target="_blank" rel="noopener">
+          <img src="https://vampirefreaks.com/cdn/shop/files/conjuring-cat-pumpkin-potion-candle-housewares-483300.jpg?v=1759272183&amp;width=1000" alt="Conjuring Cat Pumpkin Potion Candle" loading="lazy" width="800" height="1000" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+          <div class="kiss-no-image" style="display:none;">PUMPKIN POTION</div>
+          <span class="kiss-product-badge">PUMPKIN POTION</span>
+        </a>
+        <div class="kiss-product-info">
+          <a href="https://vampirefreaks.com/en-uk/products/conjuring-cat-pumpkin-potion-candle" class="kiss-product-title" target="_blank" rel="noopener">Conjuring Cat</a>
+          <p class="kiss-product-description">Pumpkin Potion · Gothic cat · 3 wicks</p>
+          <div class="kiss-product-price"><strong>£9.00 GBP</strong> <span class="kiss-old-price">Currently sold out</span></div>
+          <a class="kiss-add-button kiss-external-button" href="https://vampirefreaks.com/en-uk/products/conjuring-cat-pumpkin-potion-candle" target="_blank" rel="noopener">VIEW CANDLE <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="kiss-product-card">
+        <a href="https://www.maisonmargiela-fragrances.us/home-scenting/replica-at-the-doorstep-scented-candle/MM195.html" class="kiss-product-image" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1602523961358-f9f03dd557db?auto=format&fit=crop&w=1000&q=85" alt="Luxury scented candle" loading="lazy" width="800" height="1000" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';"><div class="kiss-no-image" style="display:none;">REPLICA</div>
+          <span class="kiss-product-badge">DESIGNER SCENT</span>
+        </a>
+        <div class="kiss-product-info">
+          <a href="https://www.maisonmargiela-fragrances.us/home-scenting/replica-at-the-doorstep-scented-candle/MM195.html" class="kiss-product-title" target="_blank" rel="noopener">At the Doorstep</a>
+          <p class="kiss-product-description">Maison Margiela · REPLICA scented candle</p>
+          <div class="kiss-product-price"><strong>$72.00 USD</strong></div>
+          <a class="kiss-add-button kiss-external-button" href="https://www.maisonmargiela-fragrances.us/home-scenting/replica-at-the-doorstep-scented-candle/MM195.html" target="_blank" rel="noopener">VIEW CANDLE <span>↗</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 06 OFFER + COUNTDOWN -->
+  <section class="kiss-offer" id="kiss-offer">
+    <div class="kiss-offer-decoration">30%</div>
+
+    <div class="kiss-offer-content">
+      <p class="kiss-eyebrow">A LITTLE TREAT FOR YOU</p>
+      <h2>THE HALLOWEEN<br><em>SPECIAL.</em></h2>
+
+      <p class="kiss-offer-text">
+        Make your Halloween unforgettable. Discover selected candles
+        with a special 30% discount.
+      </p>
+
+      <ul class="kiss-offer-list">
+        <li>✦ Selected Halloween glass jar candles</li>
+        <li>✦ Unique seasonal designs</li>
+        <li>✦ Beautiful candlelight for your space</li>
+        <li>✦ A special gift for someone you love</li>
+      </ul>
+
+      <div class="kiss-countdown-title">THE OFFER ENDS IN</div>
+
+      <div class="kiss-countdown" id="kiss-countdown">
+        <div><strong id="kiss-days">00</strong><span>DAYS</span></div>
+        <b>:</b>
+        <div><strong id="kiss-hours">00</strong><span>HOURS</span></div>
+        <b>:</b>
+        <div><strong id="kiss-minutes">00</strong><span>MINUTES</span></div>
+        <b>:</b>
+        <div><strong id="kiss-seconds">00</strong><span>SECONDS</span></div>
+      </div>
+
+      <a href="#kiss-collection" class="kiss-button kiss-button-light">
+        SHOP THE OFFER ↗
+      </a>
+
+      <small class="kiss-offer-disclaimer">
+        Offer ends November 30, 2026. Discount applies only to selected products.
+      </small>
+    </div>
+  </section>
+
+  <!-- 07 SOCIAL PROOF -->
+  <section class="kiss-reviews">
+    <div class="kiss-section-heading">
+      <p class="kiss-eyebrow">THE LOVE IS IN THE DETAILS</p>
+      <h2>MADE FOR MOMENTS<br><em>WORTH REMEMBERING.</em></h2>
+      <p>Beautiful candles make the little moments feel special.</p>
+    </div>
+
+    <div class="kiss-review-grid">
+      <article class="kiss-review">
+        <div class="kiss-stars">★★★★★</div>
+        <p>
+          “I love the Halloween design. It looks beautiful on my table
+          and creates such a cozy atmosphere.”
+        </p>
+        <div class="kiss-review-author">
+          <span>EM</span>
+          <div>
+            <strong>Emily R.</strong>
+            <small>Sample review — replace with a real customer review</small>
+          </div>
+        </div>
+      </article>
+
+      <article class="kiss-review">
+        <div class="kiss-stars">★★★★★</div>
+        <p>
+          “Such a lovely seasonal gift idea. The glass jar design
+          makes it feel extra special.”
+        </p>
+        <div class="kiss-review-author">
+          <span>SM</span>
+          <div>
+            <strong>Sophia M.</strong>
+            <small>Sample review — replace with a real customer review</small>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="kiss-review-note">
+      These are sample review layouts. Replace them with genuine customer feedback before publishing.
+    </p>
+  </section>
+
+  <!-- 08 COMPARISON -->
+  <section class="kiss-comparison">
+    <div class="kiss-section-heading">
+      <p class="kiss-eyebrow">THE KISS DESIGN DIFFERENCE</p>
+      <h2>NOT JUST A CANDLE.<br><em>A WHOLE MOOD.</em></h2>
+    </div>
+
+    <div class="kiss-table-wrap">
+      <table class="kiss-table">
+        <thead>
+          <tr>
+            <th>WHAT MATTERS</th>
+            <th>KISS DESIGN</th>
+            <th>ORDINARY CANDLES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Halloween-inspired designs</td>
+            <td class="kiss-check">✦</td>
+            <td class="kiss-cross">—</td>
+          </tr>
+          <tr>
+            <td>Decorative glass jar styles</td>
+            <td class="kiss-check">✦</td>
+            <td class="kiss-cross">—</td>
+          </tr>
+          <tr>
+            <td>Seasonal collection</td>
+            <td class="kiss-check">✦</td>
+            <td class="kiss-cross">—</td>
+          </tr>
+          <tr>
+            <td>Gift-worthy designs</td>
+            <td class="kiss-check">✦</td>
+            <td class="kiss-cross">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="kiss-comparison-note">
+      Illustrative comparison of design features, not a verified review of specific competitors.
+    </p>
+  </section>
+
+  <!-- 09 FAQ -->
+  <section class="kiss-faq" id="kiss-faq">
+    <div class="kiss-faq-heading">
+      <p class="kiss-eyebrow">GOOD TO KNOW</p>
+      <h2>FREQUENTLY<br><em>ASKED QUESTIONS.</em></h2>
+      <p>Everything you need to know before choosing your candle.</p>
+    </div>
+
+    <div class="kiss-faq-list">
+
+      <details>
+        <summary>What kind of candles do you offer?<span>+</span></summary>
+        <p>
+          KISS DESIGN features Halloween-inspired candles in decorative
+          glass jars. Check each product page for its specific details.
+        </p>
+      </details>
+
+      <details>
+        <summary>What scents are available?<span>+</span></summary>
+        <p>
+          Available scents and fragrance details are listed on each
+          candle's product page.
+        </p>
+      </details>
+
+      <details>
+        <summary>Are the candles suitable as gifts?<span>+</span></summary>
+        <p>
+          Absolutely. Their seasonal designs make them a lovely gift
+          for Halloween lovers and candle enthusiasts.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can I place an order?<span>+</span></summary>
+        <p>
+          Choose your favorite candle, click Add to Cart and continue
+          to checkout to complete your order.
+        </p>
+      </details>
+
+      <details>
+        <summary>How long does delivery take?<span>+</span></summary>
+        <p>
+          Delivery times depend on your location and the shipping
+          options available at checkout.
+        </p>
+      </details>
+
+      <details>
+        <summary>When does the 30% offer end?<span>+</span></summary>
+        <p>
+          The advertised Halloween offer ends November 30, 2026.
+          It applies to selected products only.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- 10 FINAL CTA -->
+  <section class="kiss-final">
+    <div class="kiss-final-content">
+      <p class="kiss-eyebrow">YOUR HALLOWEEN. YOUR ATMOSPHERE.</p>
+      <h2>MAKE THIS<br><em>HALLOWEEN GLOW.</em></h2>
+      <p>Your favorite candle is waiting. Let the magic begin.</p>
+
+      <a href="#kiss-collection" class="kiss-button">
+        SHOP THE COLLECTION ↗
+      </a>
+
+      <div class="kiss-final-decoration">✧ &nbsp; ☽ &nbsp; ✧</div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="kiss-newsletter">
+    <div>
+      <p class="kiss-eyebrow">LET THE MAGIC IN</p>
+      <h2>STAY IN THE <em>GLOW.</em></h2>
+      <p>Join our list for new collections, special offers and little surprises.</p>
+    </div>
+
+    {% form 'customer', class: 'kiss-newsletter-form' %}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <input
+        type="email"
+        name="contact[email]"
+        placeholder="Your email address"
+        aria-label="Your email address"
+        required
+      >
+      <button type="submit">SUBSCRIBE ↗</button>
+
+      {% if form.posted_successfully? %}
+        <p class="kiss-form-success">Thank you for subscribing!</p>
+      {% endif %}
+
+      {% if form.errors %}
+        <p class="kiss-form-error">{{ form.errors | default_errors }}</p>
+      {% endif %}
+    {% endform %}
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="kiss-footer">
+    <a href="/" class="kiss-logo">KISS <span>DESIGN</span></a>
+
+    <p>LIGHT UP YOUR DARKEST NIGHTS.</p>
+
+    <div class="kiss-footer-links">
+      <a href="/policies/privacy-policy">Privacy Policy</a>
+      <a href="/policies/shipping-policy">Shipping</a>
+      <a href="/policies/refund-policy">Refunds</a>
+      <a href="/policies/terms-of-service">Terms</a>
+    </div>
+
+    <small>© {{ 'now' | date: '%Y' }} KISS DESIGN. ALL RIGHTS RESERVED.</small>
+  </footer>
+
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+#kiss-design {
+  --kiss-bg: #100d0b;
+  --kiss-bg2: #19130f;
+  --kiss-card: #211812;
+  --kiss-gold: #e58a2b;
+  --kiss-gold-light: #ffbd59;
+  --kiss-cream: #f1e8d9;
+  --kiss-muted: #a89b8c;
+  --kiss-line: rgba(210,177,130,.24);
+  background: var(--kiss-bg);
+  color: var(--kiss-cream);
+  font-family: 'DM Sans', sans-serif;
+  overflow: hidden;
+  width: 100%;
+}
+
+#kiss-design * { box-sizing: border-box; }
+#kiss-design a { color: inherit; text-decoration: none; }
+#kiss-design button, #kiss-design input { font: inherit; }
+#kiss-design img { display: block; max-width: 100%; }
+#kiss-design section { scroll-margin-top: 90px; }
+
+#kiss-design .kiss-announcement {
+  background: var(--kiss-gold);
+  color: #170f09;
+  text-align: center;
+  padding: 11px 15px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#kiss-design .kiss-announcement span { padding: 0 10px; }
+
+#kiss-design .kiss-header {
+  min-height: 82px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--kiss-line);
+  background: #100d0b;
+  position: relative;
+  z-index: 20;
+}
+#kiss-design .kiss-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 31px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+#kiss-design .kiss-logo span {
+  color: var(--kiss-gold);
+  font-weight: 400;
+}
+#kiss-design .kiss-nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+#kiss-design .kiss-nav a,
+#kiss-design .kiss-cart {
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  transition: color .25s;
+}
+#kiss-design .kiss-nav a:hover,
+#kiss-design .kiss-cart:hover { color: var(--kiss-gold-light); }
+#kiss-design .kiss-cart span {
+  color: var(--kiss-gold-light);
+  margin-left: 6px;
+}
+#kiss-design .kiss-menu-toggle,
+#kiss-design .kiss-mobile-menu { display: none; }
+
+#kiss-design .kiss-hero {
+  min-height: 690px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 90px 9%;
+  background-image:
+    linear-gradient(90deg, rgba(10,7,5,.94) 0%, rgba(10,7,5,.74) 48%, rgba(10,7,5,.16) 100%),
+    url('https://images.unsplash.com/photo-1509557965875-b88c97052f0e?auto=format&fit=crop&w=2200&q=85');
+  background-size: cover;
+  background-position: center;
+}
+#kiss-design .kiss-hero-overlay { position: absolute; inset: 0; pointer-events: none; }
+#kiss-design .kiss-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+#kiss-design .kiss-eyebrow {
+  color: var(--kiss-gold-light);
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin: 0 0 22px;
+}
+#kiss-design h1,
+#kiss-design h2,
+#kiss-design h3,
+#kiss-design p { margin-top: 0; }
+#kiss-design .kiss-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(58px, 8.2vw, 112px);
+  line-height: .88;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin: 0 0 28px;
+}
+#kiss-design .kiss-hero h1 span,
+#kiss-design h2 em {
+  color: var(--kiss-gold-light);
+  font-style: italic;
+}
+#kiss-design .kiss-hero-description {
+  max-width: 440px;
+  color: #d0c3b3;
+  line-height: 1.9;
+  font-size: 14px;
+}
+#kiss-design .kiss-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+#kiss-design .kiss-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background: var(--kiss-gold);
+  color: #170f09;
+  padding: 17px 25px;
+  min-height: 52px;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  transition: .3s;
+  border: 1px solid var(--kiss-gold);
+}
+#kiss-design .kiss-button:hover {
+  background: var(--kiss-gold-light);
+  border-color: var(--kiss-gold-light);
+  transform: translateY(-3px);
+}
+#kiss-design .kiss-hero-note {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #d3c1a8;
+}
+#kiss-design .kiss-hero-bottom {
+  position: absolute;
+  bottom: 24px;
+  left: 9%;
+  right: 9%;
+  display: flex;
+  justify-content: space-between;
+  color: #c7b7a3;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+#kiss-design .kiss-problems,
+#kiss-design .kiss-features,
+#kiss-design .kiss-reviews,
+#kiss-design .kiss-comparison,
+#kiss-design .kiss-faq {
+  padding: 105px 8%;
+}
+#kiss-design .kiss-section-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 55px;
+}
+#kiss-design h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: clamp(42px, 5vw, 66px);
+  line-height: .98;
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+}
+#kiss-design .kiss-section-heading > p:last-child {
+  color: var(--kiss-muted);
+  line-height: 1.8;
+  font-size: 13px;
+}
+#kiss-design .kiss-problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+#kiss-design .kiss-problem {
+  padding: 36px 30px;
+  border: 1px solid var(--kiss-line);
+  background: linear-gradient(145deg, #211812, #130f0c);
+  min-height: 250px;
+}
+#kiss-design .kiss-number {
+  color: var(--kiss-gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+#kiss-design .kiss-symbol {
+  font-family: serif;
+  color: var(--kiss-gold-light);
+  font-size: 35px;
+  margin: 22px 0;
+}
+#kiss-design .kiss-problem h3,
+#kiss-design .kiss-feature h3 {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+#kiss-design .kiss-problem p,
+#kiss-design .kiss-feature p {
+  font-size: 12px;
+  color: var(--kiss-muted);
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+#kiss-design .kiss-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 650px;
+  background: var(--kiss-bg2);
+}
+#kiss-design .kiss-benefits-image {
+  min-height: 580px;
+  position: relative;
+  background:
+    linear-gradient(0deg, rgba(10,7,5,.7), transparent 45%),
+    url('https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1400&q=85') center/cover no-repeat;
+}
+#kiss-design .kiss-image-caption {
+  position: absolute;
+  bottom: 28px;
+  left: 35px;
+  right: 35px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+#kiss-design .kiss-benefits-content {
+  padding: 85px 12%;
+  align-self: center;
+}
+#kiss-design .kiss-benefits-content h2 { font-size: clamp(43px, 4.5vw, 62px); }
+#kiss-design .kiss-benefit-list { margin: 38px 0; }
+#kiss-design .kiss-benefit {
+  display: flex;
+  gap: 22px;
+  padding: 19px 0;
+  border-bottom: 1px solid var(--kiss-line);
+}
+#kiss-design .kiss-benefit > span {
+  color: var(--kiss-gold);
+  font-size: 11px;
+  padding-top: 3px;
+}
+#kiss-design .kiss-benefit h3 {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+#kiss-design .kiss-benefit p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--kiss-muted);
+  margin-bottom: 0;
+}
+#kiss-design .kiss-text-link {
+  display: inline-block;
+  color: var(--kiss-gold-light);
+  font-size: 10px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--kiss-gold);
+  padding-bottom: 9px;
+}
+
+#kiss-design .kiss-features { background: #15100d; }
+#kiss-design .kiss-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+#kiss-design .kiss-feature {
+  text-align: center;
+  padding: 38px 22px;
+  border: 1px solid var(--kiss-line);
+}
+#kiss-design .kiss-feature-icon {
+  color: var(--kiss-gold-light);
+  font-size: 35px;
+  display: block;
+  margin-bottom: 24px;
+}
+
+#kiss-design .kiss-collection { padding: 105px 8%; }
+#kiss-design .kiss-collection-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+#kiss-design .kiss-collection-top h2 { margin-bottom: 0; }
+#kiss-design .kiss-collection-description {
+  max-width: 280px;
+  color: var(--kiss-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+#kiss-design .kiss-discount-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 18px;
+  border: 1px solid var(--kiss-line);
+  margin-bottom: 35px;
+  text-align: center;
+  color: var(--kiss-gold-light);
+}
+#kiss-design .kiss-discount-note strong {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+#kiss-design .kiss-discount-note small {
+  display: block;
+  color: var(--kiss-muted);
+  font-size: 10px;
+  margin-top: 5px;
+}
+#kiss-design .kiss-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px 18px;
+}
+#kiss-design .kiss-product-card { min-width: 0; }
+#kiss-design .kiss-product-image {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #211812;
+}
+#kiss-design .kiss-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s;
+}
+#kiss-design .kiss-product-card:hover .kiss-product-image img {
+  transform: scale(1.06);
+}
+#kiss-design .kiss-product-badge {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  background: var(--kiss-gold);
+  color: #170f09;
+  padding: 8px 10px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+#kiss-design .kiss-no-image {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: var(--kiss-gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+}
+#kiss-design .kiss-product-info { padding-top: 17px; }
+#kiss-design .kiss-product-description {
+  min-height: 36px;
+  color: var(--kiss-muted);
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0 0 15px;
+}
+#kiss-design .kiss-external-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+#kiss-design .kiss-external-button span { margin-left: 10px; }
+
+#kiss-design .kiss-product-title {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+#kiss-design .kiss-product-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+#kiss-design .kiss-old-price {
+  color: #8c7d70;
+  text-decoration: line-through;
+}
+#kiss-design .kiss-product-price strong { color: #ffbd59 !important; }
+#kiss-design .kiss-product-price { color: #f1e8d9 !important; flex-wrap: wrap; }
+#kiss-design .kiss-add-form { margin: 0; }
+#kiss-design .kiss-add-button {
+  width: 100%;
+  min-height: 43px;
+  background: transparent;
+  border: 1px solid var(--kiss-gold);
+  color: var(--kiss-cream);
+  cursor: pointer;
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  transition: .3s;
+}
+#kiss-design .kiss-add-button:hover {
+  background: var(--kiss-gold);
+  color: #170f09;
+}
+#kiss-design .kiss-add-button span { margin-left: 10px; }
+#kiss-design .kiss-sold-out { opacity: .5; cursor: not-allowed; }
+#kiss-design .kiss-view-all { text-align: center; margin-top: 48px; }
+#kiss-design .kiss-outline-button {
+  display: inline-block;
+  border: 1px solid var(--kiss-gold);
+  padding: 17px 28px;
+  color: var(--kiss-gold-light);
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+#kiss-design .kiss-outline-button:hover {
+  background: var(--kiss-gold);
+  color: #170f09;
+}
+#kiss-design .kiss-empty-collection {
+  text-align: center;
+  padding: 65px 20px;
+  border: 1px solid var(--kiss-line);
+}
+#kiss-design .kiss-empty-collection > span { color: var(--kiss-gold); font-size: 35px; }
+#kiss-design .kiss-empty-collection h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+}
+#kiss-design .kiss-empty-collection p {
+  color: var(--kiss-muted);
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+#kiss-design .kiss-offer {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 85% 50%, rgba(171,104,40,.23), transparent 48%),
+    linear-gradient(120deg, #24170f, #110d0a);
+  padding: 100px 9%;
+  border-top: 1px solid var(--kiss-line);
+  border-bottom: 1px solid var(--kiss-line);
+}
+#kiss-design .kiss-offer-content {
+  max-width: 650px;
+  position: relative;
+  z-index: 2;
+}
+#kiss-design .kiss-offer h2 { font-size: clamp(52px, 7vw, 84px); }
+#kiss-design .kiss-offer-text {
+  max-width: 450px;
+  color: #c5b7a7;
+  line-height: 1.8;
+  font-size: 13px;
+}
+#kiss-design .kiss-offer-list {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0;
+}
+#kiss-design .kiss-offer-list li {
+  padding: 8px 0;
+  font-size: 12px;
+  color: #ded0bd;
+}
+#kiss-design .kiss-countdown-title {
+  color: var(--kiss-gold-light);
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin: 28px 0 14px;
+}
+#kiss-design .kiss-countdown {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 30px;
+}
+#kiss-design .kiss-countdown div {
+  display: flex;
+  flex-direction: column;
+  min-width: 54px;
+  text-align: center;
+}
+#kiss-design .kiss-countdown strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 37px;
+  font-weight: 500;
+  color: var(--kiss-gold-light);
+}
+#kiss-design .kiss-countdown span {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: var(--kiss-muted);
+}
+#kiss-design .kiss-countdown > b { color: var(--kiss-gold); font-weight: 400; }
+#kiss-design .kiss-button-light { background: var(--kiss-cream); border-color: var(--kiss-cream); }
+#kiss-design .kiss-button-light:hover { background: white; border-color: white; }
+#kiss-design .kiss-offer-disclaimer {
+  display: block;
+  margin-top: 17px;
+  color: var(--kiss-muted);
+  font-size: 9px;
+}
+#kiss-design .kiss-offer-decoration {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(150px, 25vw, 360px);
+  line-height: 1;
+  color: rgba(220,174,111,.055);
+  pointer-events: none;
+}
+
+#kiss-design .kiss-reviews { background: #15100d; }
+#kiss-design .kiss-review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 950px;
+  margin: auto;
+}
+#kiss-design .kiss-review {
+  background: #211812;
+  border: 1px solid var(--kiss-line);
+  padding: 35px;
+}
+#kiss-design .kiss-stars {
+  color: var(--kiss-gold-light);
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+#kiss-design .kiss-review > p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+  line-height: 1.45;
+  color: #e8ddcf;
+}
+#kiss-design .kiss-review-author {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 25px;
+}
+#kiss-design .kiss-review-author > span {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--kiss-gold);
+  border-radius: 50%;
+  color: var(--kiss-gold-light);
+  font-size: 10px;
+}
+#kiss-design .kiss-review-author strong,
+#kiss-design .kiss-review-author small { display: block; }
+#kiss-design .kiss-review-author strong { font-size: 11px; }
+#kiss-design .kiss-review-author small {
+  color: var(--kiss-muted);
+  font-size: 9px;
+  margin-top: 4px;
+}
+#kiss-design .kiss-review-note,
+#kiss-design .kiss-comparison-note {
+  color: var(--kiss-muted);
+  text-align: center;
+  font-size: 10px;
+  margin-top: 22px;
+}
+
+#kiss-design .kiss-comparison { background: var(--kiss-bg); }
+#kiss-design .kiss-table-wrap {
+  max-width: 900px;
+  margin: auto;
+  overflow-x: auto;
+}
+#kiss-design .kiss-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 540px;
+}
+#kiss-design .kiss-table th,
+#kiss-design .kiss-table td {
+  padding: 20px 18px;
+  border-bottom: 1px solid var(--kiss-line);
+  text-align: center;
+  font-size: 11px;
+}
+#kiss-design .kiss-table th {
+  color: var(--kiss-gold-light);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+#kiss-design .kiss-table th:first-child,
+#kiss-design .kiss-table td:first-child { text-align: left; }
+#kiss-design .kiss-table td:first-child { color: #d8cbbb; }
+#kiss-design .kiss-check { color: var(--kiss-gold-light); font-size: 18px !important; }
+#kiss-design .kiss-cross { color: #75685c; }
+
+#kiss-design .kiss-faq {
+  background: #15100d;
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 9%;
+}
+#kiss-design .kiss-faq-heading h2 { font-size: clamp(42px, 4.5vw, 60px); }
+#kiss-design .kiss-faq-heading > p:last-child {
+  color: var(--kiss-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+#kiss-design .kiss-faq-list details {
+  border-bottom: 1px solid var(--kiss-line);
+  padding: 20px 0;
+}
+#kiss-design .kiss-faq-list summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  font-size: 12px;
+  letter-spacing: .4px;
+}
+#kiss-design .kiss-faq-list summary::-webkit-details-marker { display: none; }
+#kiss-design .kiss-faq-list summary span {
+  color: var(--kiss-gold-light);
+  font-size: 20px;
+  transition: transform .2s;
+}
+#kiss-design .kiss-faq-list details[open] summary span { transform: rotate(45deg); }
+#kiss-design .kiss-faq-list details p {
+  color: var(--kiss-muted);
+  font-size: 12px;
+  line-height: 1.8;
+  padding: 14px 25px 0 0;
+  margin-bottom: 0;
+}
+
+#kiss-design .kiss-final {
+  min-height: 530px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 90px 20px;
+  background:
+    radial-gradient(ellipse at center, rgba(153,94,42,.19), transparent 60%),
+    #100d0b;
+  border-top: 1px solid var(--kiss-line);
+}
+#kiss-design .kiss-final h2 { font-size: clamp(55px, 8vw, 92px); }
+#kiss-design .kiss-final-content > p:not(.kiss-eyebrow) {
+  color: var(--kiss-muted);
+  font-size: 13px;
+  margin: 25px 0 30px;
+}
+#kiss-design .kiss-final-decoration {
+  margin-top: 45px;
+  color: var(--kiss-gold);
+  letter-spacing: 10px;
+  font-size: 19px;
+}
+
+#kiss-design .kiss-newsletter {
+  padding: 60px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  background: #211812;
+  border-top: 1px solid var(--kiss-line);
+}
+#kiss-design .kiss-newsletter h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#kiss-design .kiss-newsletter > div > p:last-child {
+  color: var(--kiss-muted);
+  font-size: 11px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+#kiss-design .kiss-newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: min(470px, 100%);
+  border-bottom: 1px solid var(--kiss-gold);
+}
+#kiss-design .kiss-newsletter-form input {
+  min-width: 0;
+  flex: 1;
+  background: transparent;
+  color: var(--kiss-cream);
+  border: 0;
+  outline: none;
+  padding: 15px 5px;
+  font-size: 11px;
+}
+#kiss-design .kiss-newsletter-form input::placeholder { color: #a89b8c; }
+#kiss-design .kiss-newsletter-form button {
+  background: transparent;
+  border: 0;
+  color: var(--kiss-gold-light);
+  cursor: pointer;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  padding: 10px;
+}
+#kiss-design .kiss-form-success,
+#kiss-design .kiss-form-error {
+  width: 100%;
+  font-size: 11px;
+  padding-top: 10px;
+}
+#kiss-design .kiss-form-success { color: #b8d5a0; }
+#kiss-design .kiss-form-error { color: #e5a39a; }
+
+#kiss-design .kiss-footer {
+  padding: 55px 8% 30px;
+  text-align: center;
+  background: #0b0908;
+}
+#kiss-design .kiss-footer > p {
+  color: var(--kiss-muted);
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin: 15px 0 30px;
+}
+#kiss-design .kiss-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+#kiss-design .kiss-footer-links a {
+  color: var(--kiss-muted);
+  font-size: 10px;
+}
+#kiss-design .kiss-footer-links a:hover { color: var(--kiss-gold-light); }
+#kiss-design .kiss-footer > small {
+  color: #71665c;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+}
+
+@media(max-width: 900px) {
+  #kiss-design .kiss-nav { gap: 17px; }
+  #kiss-design .kiss-header { padding: 0 5%; }
+  #kiss-design .kiss-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #kiss-design .kiss-feature-grid { grid-template-columns: repeat(2, 1fr); }
+  #kiss-design .kiss-benefits-content { padding: 60px 8%; }
+  #kiss-design .kiss-faq { gap: 5%; }
+}
+
+@media(max-width: 650px) {
+  #kiss-design .kiss-announcement { font-size: 8px; letter-spacing: 1px; }
+  #kiss-design .kiss-header { min-height: 70px; }
+  #kiss-design .kiss-logo { font-size: 25px; }
+  #kiss-design .kiss-nav { display: none; }
+  #kiss-design .kiss-cart { margin-left: auto; margin-right: 20px; }
+  #kiss-design .kiss-menu-toggle {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: transparent;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  #kiss-design .kiss-menu-toggle span {
+    height: 1px;
+    width: 24px;
+    background: var(--kiss-gold-light);
+  }
+  #kiss-design .kiss-mobile-menu {
+    display: none;
+    position: absolute;
+    z-index: 19;
+    top: auto;
+    left: 0;
+    right: 0;
+    background: #17110d;
+    padding: 20px 7%;
+    border-bottom: 1px solid var(--kiss-line);
+  }
+  #kiss-design .kiss-mobile-menu.is-open { display: grid; }
+  #kiss-design .kiss-mobile-menu a {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--kiss-line);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+  #kiss-design .kiss-hero {
+    min-height: 650px;
+    padding: 90px 7%;
+    background-position: 60% center;
+  }
+  #kiss-design .kiss-hero h1 { font-size: clamp(55px, 15vw, 80px); }
+  #kiss-design .kiss-hero-description { font-size: 12px; }
+  #kiss-design .kiss-hero-actions { gap: 16px; }
+  #kiss-design .kiss-hero-bottom { left: 7%; right: 7%; font-size: 7px; }
+  #kiss-design .kiss-problems,
+  #kiss-design .kiss-features,
+  #kiss-design .kiss-reviews,
+  #kiss-design .kiss-comparison,
+  #kiss-design .kiss-faq,
+  #kiss-design .kiss-collection { padding: 75px 6%; }
+  #kiss-design .kiss-problem-grid { grid-template-columns: 1fr; }
+  #kiss-design .kiss-problem { min-height: auto; padding: 27px; }
+  #kiss-design .kiss-benefits { grid-template-columns: 1fr; }
+  #kiss-design .kiss-benefits-image { min-height: 390px; }
+  #kiss-design .kiss-benefits-content { padding: 65px 7%; }
+  #kiss-design .kiss-feature-grid { gap: 10px; }
+  #kiss-design .kiss-feature { padding: 27px 13px; }
+  #kiss-design .kiss-feature h3 { font-size: 10px; }
+  #kiss-design .kiss-feature p { font-size: 11px; }
+  #kiss-design .kiss-collection-top { display: block; }
+  #kiss-design .kiss-collection-description { margin-top: 20px; }
+  #kiss-design .kiss-product-grid { gap: 25px 12px; }
+  #kiss-design .kiss-product-title { font-size: 20px; }
+  #kiss-design .kiss-product-price { font-size: 11px; }
+  #kiss-design .kiss-add-button { font-size: 8px; }
+  #kiss-design .kiss-offer { padding: 75px 7%; }
+  #kiss-design .kiss-countdown { gap: 8px; }
+  #kiss-design .kiss-countdown div { min-width: 45px; }
+  #kiss-design .kiss-countdown strong { font-size: 30px; }
+  #kiss-design .kiss-review-grid { grid-template-columns: 1fr; }
+  #kiss-design .kiss-review { padding: 27px; }
+  #kiss-design .kiss-faq { grid-template-columns: 1fr; gap: 25px; }
+  #kiss-design .kiss-newsletter { padding: 50px 7%; display: block; }
+  #kiss-design .kiss-newsletter-form { margin-top: 25px; }
+  #kiss-design .kiss-footer-links { gap: 14px 20px; }
+}
+
+
+/* FINAL READABILITY + CARROT ORANGE OVERRIDES */
+#kiss-design { color: #f1e8d9 !important; background-color: #100d0b !important; }
+#kiss-design h1, #kiss-design h2, #kiss-design h3,
+#kiss-design p, #kiss-design li, #kiss-design summary,
+#kiss-design th, #kiss-design td, #kiss-design label,
+#kiss-design .kiss-nav a, #kiss-design .kiss-cart,
+#kiss-design .kiss-footer-links a, #kiss-design .kiss-review-author strong {
+  color: #f1e8d9 !important;
+}
+#kiss-design .kiss-eyebrow, #kiss-design h2 em,
+#kiss-design .kiss-hero h1 span, #kiss-design .kiss-logo span,
+#kiss-design .kiss-feature-icon, #kiss-design .kiss-symbol,
+#kiss-design .kiss-number, #kiss-design .kiss-benefit > span,
+#kiss-design .kiss-stars, #kiss-design .kiss-check,
+#kiss-design .kiss-countdown > b, #kiss-design .kiss-countdown strong,
+#kiss-design .kiss-text-link, #kiss-design .kiss-product-price strong,
+#kiss-design .kiss-cart span, #kiss-design .kiss-product-title:hover {
+  color: #ff9b32 !important;
+}
+#kiss-design .kiss-hero-description, #kiss-design .kiss-section-heading > p,
+#kiss-design .kiss-problem p, #kiss-design .kiss-benefit p,
+#kiss-design .kiss-feature p, #kiss-design .kiss-product-description,
+#kiss-design .kiss-review p, #kiss-design .kiss-faq p,
+#kiss-design .kiss-newsletter p, #kiss-design .kiss-footer p,
+#kiss-design .kiss-collection-description, #kiss-design .kiss-offer-text,
+#kiss-design .kiss-offer-disclaimer, #kiss-design .kiss-review-note,
+#kiss-design .kiss-comparison-note { color: #c9bbaa !important; }
+#kiss-design .kiss-announcement, #kiss-design .kiss-button,
+#kiss-design .kiss-add-button, #kiss-design .kiss-newsletter-form button {
+  background-color: #e58a2b !important; color: #160f0a !important;
+}
+#kiss-design .kiss-button-light { background: #f1e8d9 !important; color: #160f0a !important; }
+#kiss-design .kiss-product-image img { width: 100%; height: 100%; object-fit: cover; }
+#kiss-design .kiss-no-image { color: #ff9b32 !important; background: #211812 !important; }
+
+
+/* AUTOMATIC HALLOWEEN PRODUCT SLIDESHOW */
+#kiss-design .kiss-product-grid {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 22px !important;
+  overflow: hidden !important;
+  width: 100%;
+  padding: 4px 2px 22px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+#kiss-design .kiss-product-grid::-webkit-scrollbar { display: none; }
+#kiss-design .kiss-product-grid { scrollbar-width: none; }
+#kiss-design .kiss-product-card {
+  flex: 0 0 clamp(235px, 24vw, 300px) !important;
+  min-width: 0;
+}
+#kiss-design .kiss-product-image { width: 100%; }
+@media(max-width: 900px) {
+  #kiss-design .kiss-product-card { flex-basis: min(42vw, 290px) !important; }
+}
+@media(max-width: 650px) {
+  #kiss-design .kiss-product-grid { gap: 15px !important; padding-bottom: 18px; }
+  #kiss-design .kiss-product-card { flex-basis: 78vw !important; }
+}
+</style>
+
+<script>
+(function () {
+  var root = document.getElementById('kiss-design');
+  if (!root || root.dataset.kissInitialized === 'true') return;
+  root.dataset.kissInitialized = 'true';
+
+  /* MOBILE MENU */
+  var menuButton = root.querySelector('.kiss-menu-toggle');
+  var mobileMenu = root.querySelector('.kiss-mobile-menu');
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', function () {
+      mobileMenu.classList.toggle('is-open');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.remove('is-open');
+      });
+    });
+  }
+
+  /* AUTOMATIC PRODUCT SLIDESHOW — advances without manual dragging */
+  var productTrack = root.querySelector('.kiss-product-grid');
+  if (productTrack) {
+    var slideTimer;
+    var slideDelay = 3200;
+    function advanceProducts() {
+      if (!document.body.contains(root)) {
+        window.clearInterval(slideTimer);
+        return;
+      }
+      var firstCard = productTrack.querySelector('.kiss-product-card');
+      if (!firstCard) return;
+      var gap = parseFloat(window.getComputedStyle(productTrack).columnGap) || 22;
+      var step = firstCard.getBoundingClientRect().width + gap;
+      var maxScroll = productTrack.scrollWidth - productTrack.clientWidth;
+      if (maxScroll <= 2) return;
+      if (productTrack.scrollLeft >= maxScroll - 4) {
+        productTrack.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        productTrack.scrollBy({ left: step, behavior: 'smooth' });
+      }
+    }
+    slideTimer = window.setInterval(advanceProducts, slideDelay);
+    productTrack.addEventListener('mouseenter', function () { window.clearInterval(slideTimer); });
+    productTrack.addEventListener('mouseleave', function () { window.clearInterval(slideTimer); slideTimer = window.setInterval(advanceProducts, slideDelay); });
+    productTrack.addEventListener('touchstart', function () { window.clearInterval(slideTimer); }, { passive: true });
+    productTrack.addEventListener('touchend', function () { window.clearInterval(slideTimer); slideTimer = window.setInterval(advanceProducts, slideDelay); }, { passive: true });
+  }
+
+  /* COUNTDOWN — YEREVAN TIME */
+  var deadline = new Date('2026-11-30T23:59:59+04:00').getTime();
+
+  var daysEl = root.querySelector('#kiss-days');
+  var hoursEl = root.querySelector('#kiss-hours');
+  var minutesEl = root.querySelector('#kiss-minutes');
+  var secondsEl = root.querySelector('#kiss-seconds');
+  var countdown = root.querySelector('#kiss-countdown');
+
+  function updateCountdown() {
+    if (!countdown) return;
+
+    var now = Date.now();
+    var distance = deadline - now;
+
+    if (distance <= 0) {
+      countdown.innerHTML = '<div style="font-size:12px;letter-spacing:2px;color:#e0bd83">THE OFFER HAS ENDED</div>';
+      return;
+    }
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    var minutes = Math.floor((distance / (1000 * 60)) % 60);
+    var seconds = Math.floor((distance / 1000) % 60);
+
+    daysEl.textContent = String(days).padStart(2, '0');
+    hoursEl.textContent = String(hours).padStart(2, '0');
+    minutesEl.textContent = String(minutes).padStart(2, '0');
+    secondsEl.textContent = String(seconds).padStart(2, '0');
+  }
+
+  updateCountdown();
+  var countdownTimer = window.setInterval(function () {
+    if (!document.body.contains(root)) {
+      window.clearInterval(countdownTimer);
+      return;
+    }
+    updateCountdown();
+  }, 1000);
+
+  /* SMOOTH SCROLL */
+  root.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      var target = root.querySelector(link.getAttribute('href'));
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+})();
+</script>
