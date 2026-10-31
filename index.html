@@ -29,7 +29,7 @@ Collection handle: halloween-candles
       CART <span>{{ cart.item_count }}</span>
     </a>
 
-    <button class="kiss-menu-toggle" type="button" aria-label="Open menu">
+    <button class="kiss-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span>
     </button>
   </header>
@@ -167,7 +167,7 @@ Collection handle: halloween-candles
   <section class="kiss-features">
     <div class="kiss-section-heading">
       <p class="kiss-eyebrow">THE DETAILS MATTER</p>
-      <h2>MADE TO BE<br><em>ADMired.</em></h2>
+      <h2>MADE TO BE<br><em>ADMIRED.</em></h2>
       <p>Every detail brings a little more Halloween magic into your home.</p>
     </div>
 
@@ -462,8 +462,8 @@ Collection handle: halloween-candles
       <details>
         <summary>How can I place an order?<span>+</span></summary>
         <p>
-          Choose your favorite candle, click Add to Cart and continue
-          to checkout to complete your order.
+          Choose a candle and click “View Candle” to open the retailer’s
+          product page. Check availability, shipping and checkout there.
         </p>
       </details>
 
@@ -1509,6 +1509,8 @@ Collection handle: halloween-candles
     mobileMenu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         mobileMenu.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Open menu');
       });
     });
   }
@@ -1518,6 +1520,7 @@ Collection handle: halloween-candles
   if (productTrack) {
     var slideTimer;
     var slideDelay = 3200;
+    var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     function advanceProducts() {
       if (!document.body.contains(root)) {
         window.clearInterval(slideTimer);
@@ -1529,10 +1532,11 @@ Collection handle: halloween-candles
       var step = firstCard.getBoundingClientRect().width + gap;
       var maxScroll = productTrack.scrollWidth - productTrack.clientWidth;
       if (maxScroll <= 2) return;
+      var behavior = reducedMotion ? 'auto' : 'smooth';
       if (productTrack.scrollLeft >= maxScroll - 4) {
-        productTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        productTrack.scrollTo({ left: 0, behavior: behavior });
       } else {
-        productTrack.scrollBy({ left: step, behavior: 'smooth' });
+        productTrack.scrollBy({ left: step, behavior: behavior });
       }
     }
     slideTimer = window.setInterval(advanceProducts, slideDelay);
