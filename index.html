@@ -504,18 +504,22 @@ Collection handle: halloween-candles
   <!-- NEWSLETTER -->
   <section class="kiss-newsletter">
     <div>
-      <p class="kiss-eyebrow">LET THE MAGIC IN</p>
-      <h2>STAY IN THE <em>GLOW.</em></h2>
+      <h2>THE <em>GLOW.</em></h2>
       <p>Join our list for new collections, special offers and little surprises.</p>
     </div>
 
     {% form 'customer', class: 'kiss-newsletter-form' %}
       <input type="hidden" name="contact[tags]" value="newsletter">
+      <label for="KissNewsletterEmail" class="kiss-visually-hidden">Email address</label>
       <input
+        id="KissNewsletterEmail"
         type="email"
         name="contact[email]"
-        placeholder="Your email address"
-        aria-label="Your email address"
+        placeholder="Enter your email address"
+        aria-label="Email address"
+        autocomplete="email"
+        autocorrect="off"
+        autocapitalize="off"
         required
       >
       <button type="submit">SUBSCRIBE ↗</button>
@@ -1251,6 +1255,18 @@ Collection handle: halloween-candles
   color: var(--kiss-gold);
   letter-spacing: 10px;
   font-size: 19px;
+}
+
+#kiss-design .kiss-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 #kiss-design .kiss-newsletter {
